@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../css/AnimatedCountdown.css";
+import "../css/AnimatedCountDown.css";
 
 const AnimatedUnit = ({ value, label }) => (
   <div className="animated-unit">
