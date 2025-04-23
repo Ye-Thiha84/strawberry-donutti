@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../components/Card";
 import AnimatedCountdown from "../components/Animatedcountdown";
+import "../css/color.css"
 const Home = ({ time }) => {
   return (
     <main className="p-6 flex flex-col items-center justify-center gap-6">
@@ -20,7 +21,7 @@ const Home = ({ time }) => {
         </p>
         <button className="flex items-center gap-2 bg-transparent border border-gray-500 text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 white-border margin-bottom">
           <span className="text-lg">👁️</span>
-          <span>Track Period</span>
+          <span className="color-white">Track Period</span>
         </button>
       </div>
 
@@ -31,7 +32,7 @@ const Home = ({ time }) => {
         </p>
         <button className="flex items-center gap-2 bg-transparent border border-gray-500 text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 white-border margin-bottom">
           <span className="text-lg">💫❤️</span>
-          <span>Save Our Memories</span>
+          <span className="color-white">Save Our Memories</span>
         </button>
       </div>
     </main>
