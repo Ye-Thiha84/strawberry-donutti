@@ -1,0 +1,118 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hamburger Button */
+.hamburger {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Nav Links */
+.navbar-links {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+/* Link Style */
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  outline: none;
+  font-size: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* Hover underline effect */
+.navbar-link::after,
+.navbar-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ffffff, #000000);
+  transform: scaleX(0);
+  transition: transform 0.4s ease-out;
+  left: 0;
+}
+
+.navbar-link::after {
+  bottom: -5px;
+  transform-origin: right;
+}
+
+.navbar-link::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.navbar-link:hover {
+  color: white;
+}
+
+.navbar-link:hover::after,
+.navbar-link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Donut Style */
+.navbar-donut {
+  font-size: 2rem;
+  color: #fbbf24;
+}
+.donut-img {
+  width: 45px; /* You can adjust the size */
+  height: 45px;
+  object-fit: contain;
+}
+
+/* Larger screens: show nav links inline */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .donut-img {
+    width: 40px; /* You can adjust the size */
+    height: 40px;
+    object-fit: contain;
+  }
+  .navbar-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 0;
+    width: auto;
+  }
+}

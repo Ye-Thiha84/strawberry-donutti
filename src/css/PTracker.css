@@ -1,0 +1,139 @@
+.tracker-container {
+  background: transparent;
+  padding: 2rem;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tracker-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.tracker-dates {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Calendar Input Container */
+.calendar-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #eee;
+  font-size: 0.9rem;
+}
+
+/* React Datepicker Field */
+.tracker-datepicker {
+  background: #1c1c1c;
+  border: 1px solid #444;
+  padding: 0.6rem 0.8rem;
+  color: #fff;
+  border-radius: 0.6rem;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+  transition: border 0.2s ease-in-out;
+}
+
+.tracker-datepicker:focus {
+  border-color: #fff;
+  outline: none;
+  background: #2a2a2a;
+}
+
+/* React Datepicker Calendar */
+.dark-calendar {
+  background-color: #111 !important;
+  color: #eee !important;
+  border: 1px solid #444 !important;
+}
+
+.dark-calendar .react-datepicker__day--selected,
+.dark-calendar .react-datepicker__day--keyboard-selected {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.tracker-button {
+  background: black;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tracker-button:hover {
+  background: white;
+  color: black;
+}
+
+.tracker-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.box {
+  background: #000;
+  border: 2px solid white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: 8rem;
+  text-align: center;
+}
+
+.box.full {
+  width: 100%;
+  max-width: 18rem;
+}
+
+.tracker-subtitle {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.fancy-history {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.history-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+.history-dates {
+  font-weight: bold;
+}
+
+.history-details {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
